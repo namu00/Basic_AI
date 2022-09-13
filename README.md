@@ -1,9 +1,7 @@
 # 2022 인공지능 기초 Repository @Sangmyung University
 Course for Basic Artificial Intelligence in 2022
+## *This repository is forked from idsdlab/*basicai_fa22*
 
-## 수업정보
-- github 계정 생성 필수
-- 수업 용 구글 계정 생성 필수: Colab + Google Drive
 
 ## 파이썬 초보자를 위한 300제
 - [파이썬 300제](https://wikidocs.net/book/922)
@@ -13,3 +11,4 @@ Course for Basic Artificial Intelligence in 2022
 
 ## 주교재
 - [밑바닥부터 시작하는 딥러닝 1](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
+
