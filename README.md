@@ -4,7 +4,7 @@
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
 
 
-### Dir Info.  
+## Dir Info.  
 |Name|Description|Tag|  
 |:---:|:---:|:---:|  
 |.basic_ai|Python Virtual-env|*None*|  
