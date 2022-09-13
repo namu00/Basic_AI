@@ -1,6 +1,6 @@
 # 2022 인공지능 기초 Repository @*Sangmyung Univ.*  
    > ### Course for Basic Artificial Intelligence in 2022  
-   >   >_TextBook_: [밑바닥부터 시작하는 딥러닝 1](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
+   >   >_TextBook_: [*밑바닥부터 시작하는 딥러닝 1*](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)
 
 ## Dir Info.  
 |Name|Description|Tag|  
