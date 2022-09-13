@@ -1,6 +1,6 @@
 # 2022 인공지능 기초 Repository @*Sangmyung Univ.*  
-#### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
-> Course for Basic Artificial Intelligence in 2022  
+### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
+> ## Course for Basic Artificial Intelligence in 2022  
 
 
 
