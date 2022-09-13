@@ -4,7 +4,7 @@
 
 ## Dir Info.  
 |Name|Description|Tag|  
-|:---|:---:|:---:|  
+|:---:|:---:|:---:|  
 |.basic_ai|Python Virtual-env|-|  
 |Beginner_300|파이썬 초보자를 위한 300제|[파이썬 300제](https://wikidocs.net/book/922)|  
 |Intermediate_100|파이썬 중급자를 위한 100제|[파이썬 100제](https://www.notion.so/Python-100-6ee1860ce29a41bc8eb6b9cfa7d7f06c)|  
