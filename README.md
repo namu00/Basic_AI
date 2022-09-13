@@ -1,5 +1,5 @@
 # 2022 인공지능 기초 Repository @*Sangmyung Univ.*  
-  ### Course for Basic Artificial Intelligence in 2022  
+###     Course for Basic Artificial Intelligence in 2022  
 
 
 
