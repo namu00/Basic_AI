@@ -10,4 +10,4 @@
 |Intermediate_100|파이썬 중급자를 위한 100제|[파이썬 100제](https://www.notion.so/Python-100-6ee1860ce29a41bc8eb6b9cfa7d7f06c)|  
 |Week 0 ~ 15|수업시간 코드 업로드 Dir|-|
 
-## (This Repository is forked from __*idsdlab/basicai_fa22*__)  
+#### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
