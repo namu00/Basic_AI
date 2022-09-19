@@ -1,6 +1,3 @@
-from operator import truediv
-
-
 def verify(string):
     rev = string[::-1]
     if rev == string: return True
