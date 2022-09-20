@@ -2,7 +2,10 @@
 import math
 
 def diff(x):
-    return math.exp(-x)/(math.pow((1 + math.exp(-x)),2.0))
+    ga = f(x)
+    return ga*(1-ga)
 
+def f(x):
+    return 1/(1+math.exp(-x))
 input = int(input("입력 : "))
 print("출력 : ",diff(input))
