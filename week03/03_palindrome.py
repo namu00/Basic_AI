@@ -3,5 +3,5 @@ def verify(string):
     if rev == string: return True
     else: return False
 
-input = input("Key Word: ").replace(".","").replace(" ","")
-print("Result: ",verify(input))
+input = input("Key Word : ").replace(".","").replace(" ","")
+print("Result   : ",verify(input))
