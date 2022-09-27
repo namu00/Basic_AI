@@ -36,3 +36,4 @@ for d in data:
     print("text contents: ",d)
     d = d.split(" "); calc(d)
     print()
+    
