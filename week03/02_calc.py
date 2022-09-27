@@ -30,6 +30,7 @@ def calc(string):
 data = None
 with open("week03/input.txt",'r',encoding='utf-8') as f:
     data = f.readlines()
+
 for d in data:
     d = d.replace("\n","")
     print("text contents: ",d)
