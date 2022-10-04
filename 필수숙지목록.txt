@@ -1,0 +1,8 @@
+인덱싱/슬라이싱
+vstack/hstack
+view/copy
+일괄곱셈/행렬곱셈
+max/min/sum
+random
+transpose
+MeanSquareError 수식
