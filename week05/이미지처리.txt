@@ -1,0 +1,3 @@
+이미지 처리
+Pytorch     --> NCHW ((Page)Number, Chennel, Height, Width)
+Tensorflow  --> NHWC ((Page)Number, Height, Width, Chennel)
