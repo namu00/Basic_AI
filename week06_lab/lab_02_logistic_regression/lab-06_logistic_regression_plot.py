@@ -57,14 +57,16 @@ print("----" * 15)
 print("{0:2} w = {1:.5f}, b = {2:.5f} error = {3:.5f}".format(epoch, w, b, cost))
 
 
-# # 예측
-w = 3.22902
-b = -185.41300
+# 예측
+w = 344.90054
+b = -198.30700
 x = 45 # True : 0
+x = x / 100
 pred_y = sigmoid(w * x + b)
 print(pred_y)
 
 x = 60 # True : 1
+x = x / 100
 pred_y = sigmoid(w * x + b)
 print(pred_y)
 
@@ -72,7 +74,7 @@ x = data[:, 0]
 y = data[:, 1]
 
 org_x = np.linspace(0, 100, 100)
-pred_y = sigmoid(w * org_x + b)
+pred_y = sigmoid(w * (org_x / 100) + b)
 
 plt.scatter(x, y) 
 plt.title("Pass/Fail vs Score")

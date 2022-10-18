@@ -12,8 +12,8 @@ data = np.array([
     [70, 1]
 ])
 
-# x = data[:, 0] / 100
-x = data[:, 0]
+x = data[:, 0] / 100
+# x = data[:, 0]
 y = data[:, 1]
 
 
@@ -24,8 +24,8 @@ w = np.random.uniform(low=0, high=20)
 b = np.random.uniform(low=-20, high=10)
 print('w: ', w, 'b: ', b)
 
-num_epoch = 10000
-learning_rate = 0.5
+num_epoch = 500000
+learning_rate = 100
 costs = []
 eps = 1e-5
 
