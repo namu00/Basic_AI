@@ -13,7 +13,7 @@
 ## Regression과 Classification  
    > Regression (회귀)     : 입력변수에 대하여 연속적인 값을 도출하는 모델  
    > Classification(분류)  : 입력변수에 대하여 이산적인 값을 도출하는 모델  
-
+   >  
    >Example)  
    > 다음주 서울의 기압(kPa) 예측               --> 회귀  
    > 다음주 서울의 날씨(좋음, 나쁨, 흐림) 예측  --> 분류  
@@ -22,6 +22,7 @@
    > y = Wx + B  
    > Sigmoid(x) = 1 / (1 + exp(-x))  
    > Softmax(x) = exp(x) / sum(exp(x(i)))  
+   >  
    > (W: Weight, B: Bias)  
 
 
