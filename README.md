@@ -49,13 +49,11 @@
    ### One-Hot Encoding?  
    > 정답 데이터를 1, 그외 답을 0으로 표현한 부호화 방법.  
    > 데이터를 확률적으로 추종하기 유리하다.  
-   
    > Example)  
    ```Python
     Ans = [1 0 0]
     Predict = [0.98 0.15 0.5]
     if argmax(Predict) == argmax(Ans) : return True:
     else: return False
-    ```
 
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
