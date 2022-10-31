@@ -45,6 +45,7 @@ print(x)
 
 # one-hot encoding
 num = np.unique(label, axis=0)
+print(num)
 num = num.shape[0]
 
 encoding = np.eye(num)[label]

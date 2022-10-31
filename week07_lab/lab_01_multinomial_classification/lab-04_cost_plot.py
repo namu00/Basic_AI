@@ -7,15 +7,17 @@ iris = sns.load_dataset("iris")
 
 x = iris.iloc[:,0:4].values
 print(x.shape)
+print(type(x))
 y = iris.iloc[:,4].values
 print(y.shape)
 print(y)
 
 # # 정규화 방법
-# x_max = x.max(axis=0)
-# x_normal = x / x_max
+x_max = x.max(axis=0)
+x_normal = x / x_max
 
-# x = x_normal.copy()
+x = x_normal.copy()
+print(x)
 
 label = []
 # 0 : 'setosa'
@@ -77,13 +79,15 @@ print('hypothesis: ', hypothesis.shape)
 # hypothesis:  (150, 3)
 eps = 1e-7
 
-num_epoch = 50000
-learning_rate = 0.1
+#num_epoch = 1000000000000000000000000000000000
+learning_rate = 0.01
 costs = []
 
 m, n = x.shape
-
-for epoch in range(num_epoch):
+print(type(m))
+epoch = 0;
+while True: #for epoch in range(num_epoch):
+    epoch += 1
     # z = x@w + b or
     z = np.dot(x, w) + b
     # print(z.shape)
