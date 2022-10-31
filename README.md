@@ -9,6 +9,13 @@
    > 다음주 서울의 기압(kPa) 예측               --> 회귀  
    > 다음주 서울의 날씨(좋음, 나쁨, 흐림) 예측  --> 분류  
 
+## 오차의 종류
+|Class|Expression|Tag|  
+|:---:|:---:|---:|    
+|MAE| mean(abs(Predict - Answer)) | Mean of Absolute Error |  
+|MSE| mean((Predict - Answer)^2) | Mean Square Error|  
+|RMSE| sqrt(mean(Predict - Answer)^2)) | Root Mean Square Error|  
+
 ## Regression의 종류  
    > y = Wx + B  
    > Sigmoid(x) = 1 / (1 + exp(-x))  
@@ -18,9 +25,23 @@
 
 
    |Class|No. Of Answer|Hypothesis Function|Tag|  
-   |:---:|:---:|:---:|:---:|  
+   |:---:|:---:|:---:|:---:|      
    |Linear Regression| - | y(=Wx + B) | - |  
    |Logistic Regression| 2 | Sigmoid(y) | - |  
    |Multinominal Regression| Above 3 | Softmax(y) | - |  
 
+   |Class| Cost Function | Tag|    
+   |:---:|:---:|:---:|  
+   |Linear Regression| sqrt((predict - answer)^2) | RMSE|  
+   |Logistic Regression| mean(-(answer * log(predict) + (1 - answer) * log(1 - predict))| - |  
+   |Multinominal Regression| mean((-1) * one_hot_answer * log(predict)) | - |  
+
+*GDE: Gradient Descent Expression*
+*lr: Learning Rate*
+*m: number of row items*
+   |Class| GDE(w)| GDE(b) | Tag |    
+   |:---:|---:|---:|---:|  
+   |Linear Regression| mean(w - lr * ((predict - answer) * x)) | mean(b - lr * ((predict - answer))) | - |  
+   |Logistic Regression| mean(w - learning_rate * ((predict - answer) * x))| mean(b - learning_rate * (_predict - y)) | - |  
+   |Multinominal Regression| (1/m) * np.dot(x.T, (hypothesis - answer_hot)) | (1/m) * np.sum(hypothesis - answer_hot) | - |  
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
