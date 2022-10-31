@@ -51,8 +51,8 @@
    > 데이터를 확률적으로 추종하기 유리하다.  
    > Example)  
    ```Python
-    Ans = [1 0 0]
-    Predict = [0.98 0.15 0.5]
+    Ans = [1, 0, 0]
+    Predict = [0.98, 0.15, 0.5]
     if argmax(Predict) == argmax(Ans) : return True #Right Answer Returned
     else: return False  #False Answer Returned
    ```
