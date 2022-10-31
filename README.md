@@ -55,5 +55,5 @@
     Predict = [0.98 0.15 0.5]
     if argmax(Predict) == argmax(Ans) : return True #Right Answer Returned
     else: return False  #False Answer Returned
-
+   ```
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
