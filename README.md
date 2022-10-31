@@ -1,4 +1,4 @@
-# 2022 인공지능 기초 Repository @*Sangmyung Univ.*   
+# 2022 인공지능 기초 @*Sangmyung Univ.*   
    >   _TextBook_: [*밑바닥부터 시작하는 딥러닝 1*](https://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198)  
 # Summary 
 ## Regression과 Classification  
