@@ -36,12 +36,13 @@
    |Logistic Regression| mean(-(answer * log(predict) + (1 - answer) * log(1 - predict))| - |  
    |Multinominal Regression| mean((-1) * one_hot_answer * log(predict)) | - |  
 
-*GDE: Gradient Descent Expression*
+*GDE: Gradient Descent Expression*  
 *lr: Learning Rate*  
 *m: number of row items*  
    |Class| GDE(w)| GDE(b) |      
    |:---:|:---:|:---:|    
    |Linear Regression| mean(w - lr * ((predict - answer) * x)) | mean(b - lr * ((predict - answer))) |  
-   |Logistic Regression| mean(w - learning_rate * ((predict - answer) * x))| mean(b - learning_rate * (_predict - y)) |  
-   |Multinominal Regression| (1/m) * np.dot(x.T, (hypothesis - answer_hot)) | (1/m) * np.sum(hypothesis - answer_hot) |  
+   |Logistic Regression| mean(w - lr * ((predict - answer) * x))| mean(b - lr * (predict - answer)) |  
+   |Multinominal Regression| (1/m) * np.dot(x.T, (predict - answer_hot)) | (1/m) * np.sum(predict - answer_hot) |  
+
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
