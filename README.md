@@ -37,8 +37,8 @@
    |Multinominal Regression| mean((-1) * one_hot_answer * log(predict)) | - |  
 
 *GDE: Gradient Descent Expression*
-*lr: Learning Rate*
-*m: number of row items*
+*lr: Learning Rate*  
+*m: number of row items*  
    |Class| GDE(w)| GDE(b) | Tag |    
    |:---:|:---:|:---:|:---:|  
    |Linear Regression| mean(w - lr * ((predict - answer) * x)) | mean(b - lr * ((predict - answer))) | - |  
