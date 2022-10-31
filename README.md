@@ -42,7 +42,7 @@
    |Class| GDE(w)| GDE(b) |      
    |:---:|:---:|:---:|    
    |Linear Regression| mean(w - lr * ((predict - answer) * x)) | mean(b - lr * ((predict - answer))) |  
-   |Logistic Regression| mean(w - lr * ((predict - answer) * x))| mean(b - lr * (predict - answer)) |  
+   |Logistic Regression| mean(w - lr * ((predict - answer) * x))| mean(b - lr * (predict - answer))) |  
    |Multinominal Regression| (1/m) * np.dot(x.T, (predict - answer_hot)) | (1/m) * np.sum(predict - answer_hot) |  
 
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
