@@ -32,7 +32,7 @@
 
    |Class| Cost Function | Tag|    
    |:---:|:---:|:---:|  
-   |Linear Regression| sqrt((predict - answer)^2) | RMSE|  
+   |Linear Regression| sqrt((predict - answer)**2) | RMSE|  
    |Logistic Regression| mean(-(answer * log(predict) + (1 - answer) * log(1 - predict))| - |  
    |Multinominal Regression| mean((-1) * one_hot_answer * log(predict)) | - |  
 
@@ -49,11 +49,15 @@
    ### One-Hot Encoding?  
    > 정답 데이터를 1, 그외 답을 0으로 표현한 부호화 방법.  
    > 데이터를 확률적으로 추종하기 유리하다.  
+   > 예측 결과가 1 에 가까우면, 그 인덱스를 정답으로 생각한다.  
    > Example)  
    ```Python
     Ans = [1, 0, 0]
-    Predict = [0.98, 0.15, 0.5]
+    Predict = [0.98, 0.015, 0.05]
     if argmax(Predict) == argmax(Ans) : return True #Right Answer Returned
     else: return False  #False Answer Returned
    ```
+
+   ### One-Hot Encoding 방법
+
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
