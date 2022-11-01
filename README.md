@@ -58,6 +58,34 @@
     else: return False  #False Answer Returned
    ```
 
-   ### One-Hot Encoding 방법
+   ### One-Hot Encoding 방법  
+   ```Python
+   import numpy as np
+
+   ans = [ 1, 2, 3, 4, 5, 5, 5] #Answer Array
+   ans = np.array(ans) #Convert List to nparray
+
+   unq_ans = np.unique(ans) #unique answer array
+   size = unq_ans.shape[0] #get identity matrix size
+
+   label = [] #answer index list
+   for i in ans: #fill out label index
+      if i == 1: label.append(0)
+      elif i == 2: label.append(1)
+      elif i == 3: label.append(2)
+      elif i == 4: label.append(3)
+      else: label.append(4)
+
+   one_hot_answer = np.eye(size)[label] #one-hot encoding array
+   print(one_hot_answer)
+   # [[1. 0. 0. 0. 0.]
+   #  [0. 1. 0. 0. 0.]
+   #  [0. 0. 1. 0. 0.]
+   #  [0. 0. 0. 1. 0.]
+   #  [0. 0. 0. 0. 1.]
+   #  [0. 0. 0. 0. 1.]
+   #  [0. 0. 0. 0. 1.]]
+   
+   ```
 
 #### (This Repository is forked from __*idsdlab/basicai_fa22*__)  
