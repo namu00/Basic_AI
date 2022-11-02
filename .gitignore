@@ -132,3 +132,7 @@ dmypy.json
 .pyre/
 
 **/.solution
+
+#TestFile
+test.*
+TEST.*

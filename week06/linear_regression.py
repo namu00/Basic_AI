@@ -26,8 +26,10 @@ def predict_function(x):
 
 epoch = 50000
 eps = 1e-10
+x_max = max(data[:,0])
+y_max = max(data[:,1])
 x = data[:,0] / max(data[:,0])
-y = data[:,1] / max(data[:,1])
+y = data[:,1] / x_max
 
 for i in range(epoch):
     temp = []
@@ -46,10 +48,12 @@ for i in range(epoch):
     # if i % 50 == 0:
     #     print("epoch: %d,  error: %f" % (i, cost))
 x_real = x*max(data[:,0])
-y_real = y*max(data[:,1])
+y_real = y*x_max
 
-x_line = np.linspace(0,max(x_real),100)
-y_line = np.linspace(0,max(y_real),100)
+
+x_plot = x_real
+y_plot = predict_function(x) * x_max
+
 plt.scatter(x_real,y_real)
-plt.plot(x_line, y_line)
+plt.plot(x_plot, y_plot)
 plt.show()
