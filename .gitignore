@@ -133,6 +133,8 @@ dmypy.json
 
 **/.solution
 
-#TestFile
+**/*.pkl
+
+*.basic_ai
+
 test.*
-TEST.*
