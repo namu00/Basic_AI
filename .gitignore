@@ -135,6 +135,4 @@ dmypy.json
 
 **/*.pkl
 
-#TestFile
-test.*
-TEST.*
+*.basic_ai
