@@ -1,5 +1,6 @@
 import os
 import time
+import numpy as np
 import platform
 start = time.time()  # 시작 시간 저장
 
@@ -12,12 +13,7 @@ for i in range(20000):
             os.system("clear")
             print("Operating System: ", system)
         print(i)
-    k = i ** i
-    # l = k ** k
-    # m = l ** l
-    # a = m ** m
-    # b = a ** a
-    # c = b ** b
-    # d = c ** c
+    k = np.random.randn(i)
+    k * k
 
 print("time :", time.time() - start)  # 현재시각 - 시작시간 = 실행 시간
