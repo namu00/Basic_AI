@@ -8,18 +8,20 @@ from two_layer_net_with_bn import TwoLayerNet
 import matplotlib.pyplot as plt
 from common.optimizer import *
 
+# for reproducibility
+np.random.seed(0)
+
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 
 # optimizer = SGD()
 optimizer = Adam()
 
-# network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10, use_batchnorm=False)
-network = TwoLayerNet(input_size=784, hidden_size_list=[50], output_size=10, 
-                                    weight_init_std='relu', use_batchnorm=True)
+use_batchnorm = True
 
-# network = TwoLayerNet(input_size=784, hidden_size_list=[100, 100], output_size=10, 
-                                    # weight_init_std='relu', use_batchnorm=True)
+# This network is based on multi_layer_net_extend.py
+network = TwoLayerNet(input_size=784, hidden_size_list=[50], output_size=10, 
+                                    weight_init_std='relu', use_batchnorm=use_batchnorm)
 
 network.make_layer(train_flg=True)
 
@@ -74,6 +76,11 @@ plt.legend(loc='lower right')
 plt.show()
 
 # 파라미터 저장
-network.save_params("twolayernet_1_params_with_bn.pkl")
+
+if  use_batchnorm == True:
+    network.save_params("twolayernet_2_params_with_bn.pkl")
+else:
+    network.save_params("twolayernet_2_params_without_bn.pkl")
+
 print('parameter saved')
 print('train done!!!')

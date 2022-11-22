@@ -8,6 +8,9 @@ from two_layer_net import TwoLayerNet
 import matplotlib.pyplot as plt
 from common.optimizer import *
 
+# for reproducibility
+np.random.seed(0)
+
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 
