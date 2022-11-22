@@ -7,6 +7,9 @@ from dataset.cifar10 import load_cifar10
 from model.two_layer_net import TwoLayerNet
 import matplotlib.pyplot as plt
 
+# for reproducibility
+np.random.seed(0)
+
 # 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_cifar10(normalize=True, one_hot_label=True)
 print(x_train.shape, t_train.shape)

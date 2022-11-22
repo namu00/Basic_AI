@@ -8,6 +8,9 @@ from model.lenet5 import LeNet5
 import matplotlib.pyplot as plt
 from common.optimizer import *
 
+# for reproducibility
+np.random.seed(0)
+
 # 데이터 읽기
 # (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, flatten=False, one_hot_label=True)
 (x_train, t_train), (x_test, t_test) = load_fashionMNIST(normalize=True, flatten=False, one_hot_label=True)
